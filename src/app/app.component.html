@@ -1,21 +1,378 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" href="#">
+        <strong>Navbar</strong>
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
 
-<router-outlet></router-outlet>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Home
+          </a>
+        </li>
+      </ul>
+      
+    </links>
+  </mdb-navbar>
+    <!-- Main -->
+    <!-- div class="view intro-2" style="">
+      <div class="full-bg-img">
+        <div class="mask rgba-purple-light flex-center">
+          <div class="container text-center white-text wow fadeInUp">
+            <h2>This Navbar is fixed and transparent</h2>
+            <br>
+            <h5>It will always stay visible on the top, even when you scroll down</h5>
+            <p>Navbar's background will switch from transparent to solid color while scrolling down</p>
+            <br>
+            <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+          </div>
+        </div>
+      </div>
+    </div -->
+    <!-- /.Main -->
+
+  <!--Carousel Wrapper-->
+</header>
+  <!--/.Carousel Wrapper-->
+<!-- Main -->
+
+<mdb-carousel  [isControls]="true" class="carousel slide" [animation]="'slide'">
+
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-indigo-light waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown">
+        <h3 class="h3-responsive">Light mask</h3>
+        <p>First text</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-purple-slight waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown">
+        <h3 class="h3-responsive">Super light mask</h3>
+        <p>Secondary text</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown">
+        <h3 class="h3-responsive">Strong mask</h3>
+        <p>Third text</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+
+</mdb-carousel>
+<main>
+<div class="main-wrapper">
+  <div class="container">
+    <h2 class="py-4 h3 text-center">Servicios</h2>
+      <div class="row">
+          <div class="col-md-4">
+  
+            <!-- Card -->
+            <div class="card card-image mb-3" style="background-image: url('https://mdbootstrap.com/img/Photos/Categories/Components/img(10).jpg');">
+  
+              <!-- Content -->
+              <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                <div>
+                  <h5 class="pink-text">
+                    <i class="fas fa-chart-pie"></i> Web corporation </h5>
+                  <h3 class="card-title pt-2">
+                    <strong>Este es el titulo de la carta</strong>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                    optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                    Odit sed qui, dolorum!.</p>
+                  <a class="btn btn-pink waves-effect waves-light">
+                    <i class="far fa-clone left"></i> View project</a>
+                </div>
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Card -->
+  
+          </div>
+          <div class="col-md-4">
+  
+            <!-- Card -->
+            <div class="card card-image mb-3" style="background-image: url('https://mdbootstrap.com/img/Photos/Categories/Components/img(10).jpg');">
+  
+              <!-- Content -->
+              <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                <div>
+                  <h5 class="pink-text">
+                    <i class="fas fa-chart-pie"></i> Catalogo Online</h5>
+                  <h3 class="card-title pt-2">
+                    <strong>Este es el titulo de la carta</strong>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                    optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                    Odit sed qui, dolorum!.</p>
+                  <a class="btn btn-pink waves-effect waves-light">
+                    <i class="far fa-clone left"></i> View project</a>
+                </div>
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Card -->
+  
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card card-image mb-3" style="background-image: url('https://mdbootstrap.com/img/Photos/Categories/Components/img(11).jpg');">
+              <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4">
+                <div>
+                  <h5 class="orange-text">
+                    <i class="fas fa-desktop"></i> Tienda Online</h5>
+                  <h3 class="card-title pt-2">
+                    <strong>Este es el titulo de la carta</strong>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                    optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                    Odit sed qui, dolorum!.</p>
+                  <a class="btn btn-deep-orange waves-effect waves-light">
+                    <i class="far fa-clone left"></i> View project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <section class="section feature-box">
+
+          <h2 class="my-5 h3 text-center">Main features:</h2>
+  
+          <!--First row-->
+          <div class="row features-small">
+  
+            <!--First column-->
+            <div class="col-md-5 mb-r center-on-small-only">
+              <img src="https://mdbootstrap.com/img/Others/laptop1.png" alt="MDB Admin Dashboard displayed on iPad" class="z-depth-0 img-fluid wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            </div>
+            <!--/First column-->
+  
+            <!--Second column-->
+            <div class="col-md-7 center-on-small">
+              <!--First row-->
+              <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="col-1">
+                  <i class="fas fa-code indigo-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title">Bootstrap 4</h5>
+                  <p class="grey-text">Up-to-date with the latest standards of Bootstrap 4 and all the best it has to
+                    offer.</p>
+                </div>
+              </div>
+              <!--/First row-->
+  
+              <div style="height:30px"></div>
+  
+              <!--Second row-->
+              <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="col-1">
+                  <i class="fas fa-graduation-cap cyan-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title">Angular CLI</h5>
+                  <p class="grey-text">A command line interface handling all the tedious tasks for you out of the box.</p>
+                </div>
+              </div>
+              <!--/Second row-->
+  
+              <div style="height:30px"></div>
+  
+              <!--Third row-->
+              <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="col-1">
+                  <i class="fas fa-book blue-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title">Detailed documentation</h5>
+                  <p class="grey-text">Intuitive and user-friendly documentation, created with a copy-paste approach.</p>
+                </div>
+              </div>
+              <!--/Third row-->
+            </div>
+            <!--/Second column-->
+  
+          </div>
+          <!--/First row-->
+  
+          <div class="my-2"></div>
+  
+          <!--Second row-->
+          <div class="row features-small">
+  
+            <!--First column-->
+            <div class="col-md-7 center-on-small">
+              <!--First row-->
+              <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="col-1">
+                  <i class="fas fa-code indigo-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title">No jQuery</h5>
+                  <p class="grey-text">Writing your code with pure Angular is now quicker, easier, and cleaner.</p>
+                </div>
+              </div>
+              <!--/First row-->
+  
+              <div style="height:30px"></div>
+  
+              <!--Second row-->
+              <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="col-1">
+                  <i class="fas fa-graduation-cap cyan-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title">TypeScript</h5>
+                  <p class="grey-text">Superset of JavaScript that compiles to clean JavaScript output.</p>
+                </div>
+              </div>
+              <!--/Second row-->
+  
+              <div style="height:30px"></div>
+  
+              <!--Third row-->
+              <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="col-1">
+                  <i class="fas fa-book blue-text"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title">Angular v. 7.0.3</h5>
+                  <p class="grey-text">Create smarter and faster Angular apps with the latest official Angular
+                    release.</p>
+                </div>
+              </div>
+              <!--/Third row-->
+            </div>
+            <!--/First column-->
+  
+            <!--Second column-->
+  
+            <div class="col-md-5 mb-r center-on-small-only">
+              <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/angular2.png" alt="MDB Admin Dashboard displayed on iPad" class="z-depth-0 img-fluid wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            </div>
+            <!--/Second column-->
+  
+          </div>
+          <!--/Second row-->
+  
+        </section>
+      <h2 class="py-2 h3 text-center" >Contacto</h2>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <h2><mdb-icon fab icon="periscope"></mdb-icon> Direccion</h2>
+          <p align="justify">Avenida falsa calle 123</p>
+          <h2><mdb-icon fas icon="envelope"></mdb-icon> Correo</h2>
+          <p align="justify">som@lia.com</p>
+          <h2><mdb-icon fas icon="phone"></mdb-icon> Telefono</h2>
+          <p align="justify">+56 9 1234 5678</p>  
+        </div>
+        <div class="col-md-6">
+            <div class="card-body">
+
+                <!--Header-->
+                <div class="text-center">
+                  <h3>
+                    <i class="fas fa-envelope"></i> Write to us:</h3>
+                  <hr class="mt-2 mb-2">
+                </div>
+    
+                <!--Body-->
+                <p>We'll write rarely, but only the best content.</p>
+                <br>
+    
+                <!--Body-->
+                <div class="md-form">
+                  <i class="fas fa-user prefix grey-text"></i>
+                  <input type="text" id="contactForm-name" class="form-control" mdbInput>
+                  <label for="contactForm-name">Nombre</label>
+                </div>
+    
+                <div class="md-form">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input type="text" id="contactForm-email" class="form-control" mdbInput>
+                  <label for="contactForm-email">Correo</label>
+                </div>
+    
+                <div class="md-form">
+                  <i class="fas fa-tag prefix grey-text"></i>
+                  <input type="text" id="contactForm-subj" class="form-control" mdbInput>
+                  <label for="contactForm-subj">Asunto</label>
+                </div>
+    
+                <div class="md-form">
+                  <i class="fas fa-pencil-alt prefix grey-text"></i>
+                  <textarea type="text" id="contactForm-mess" class="md-textarea" mdbInput></textarea>
+                  <label for="contactForm-mess">Contenido</label>
+                </div>
+    
+                <div class="text-center">
+                  <button class="btn btn-default waves-effect waves-light">Enviar</button>
+                </div>
+    
+              </div>
+        </div>
+      </div>
+      
+      <!-- div class="row pt-5">
+          <div class="col-md-12">
+         
+              <p align="justify">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              
+              <router-outlet>  
+                      
+                </router-outlet> 
+          </div>
+      </div-->
+  </div>
+</div>
+</main>
+<footer class="page-footer font-small indigo">
+    <div class="footer-copyright text-center py-3">
+      <b>Version</b> 1.0.1
+      <strong>Copyright © 2018-19 Konecta.</strong> Todos los derechos reservados.
+    </div>
+</footer> 
+
+<!--  div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+          <my-login-form [error]="message" (submitEM)="onSubmit($event)"></my-login-form>
+    </div>
+  </div>
+</div-->

@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname,'../dist/mat-ang')));
 app.use('/',function(req,res){
   res.sendFile(path.join(__dirname,'../dist/mat-ang','index.html'))
 });
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 80;
 
 const server = app.listen(port, function(){
   console.log('Listening on port ' + port);
